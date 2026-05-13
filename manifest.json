@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Auto Mute",
+  "version": "1.0",
+  "description": "Automatically turns off mic and camera on the Google Meet pre-join screen",
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
